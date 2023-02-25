@@ -176,8 +176,8 @@ def quick_sorted(xs, cmp=cmp_standard):
         xs_smaller = [x for x in xs if x < pivot]
         xs_bigger = [x for x in xs if x > pivot]
         xs_equal = [x for x in xs if x == pivot]
-        return list(reversed(quick_sorted(xs_smaller) + xs_equal
-                    + quick_sorted(xs_bigger)))
+        return list(reversed(quick_sorted(xs_smaller) + xs_equal +
+                    quick_sorted(xs_bigger)))
 
 
 def quick_sort(xs, cmp=cmp_standard):
